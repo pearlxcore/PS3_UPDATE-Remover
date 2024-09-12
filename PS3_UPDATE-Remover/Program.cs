@@ -52,13 +52,12 @@ internal class Program
                             Directory.Delete(ps3UpdateFolder, true);
                             Console.WriteLine($"Deleted PS3_UPDATE folder: {ps3UpdateFolder}");
                         }
-                        Console.WriteLine();
                     }
                     catch (Exception ex)
                     {
                         Console.WriteLine($"An error occured :" + ex.Message + $" [{ps3UpdateFolder_}]");
-                        Console.WriteLine();
                     }
+                    Console.WriteLine();
                 }
             }
             else
